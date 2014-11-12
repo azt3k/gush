@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+<!--[if IE 6 ]><html class="ie ie6"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8"><![endif]-->
+
+    <head>
+        <title>Gush Demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <style type="text/css">
+            .container {
+                max-width:990px;
+                margin:auto;
+            }
+            .ofx, .ofy {
+                border: 1px solid #ccc;
+            }
+            .ofx {
+                height: 100px;
+                overflow-x:auto;
+            }
+            .ofx-inner {
+                width: 1000px;;
+            }
+            .ofy {
+                height: 100px;
+                overflow-y:auto;
+            }
+        </style>
+        <!-- <script src="https://getfirebug.com/releases/lite/1.4/firebug-lite-debug.js"></script> -->
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="gush.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(function() {
+                $('.ofx').gush();
+                $('.ofy').gush();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+        <div class="container">
+            <h1>Demo - Y</h1>
+            <div class="ofy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id massa aliquam, rhoncus orci ac, pretium nisl. Etiam sagittis facilisis sem vitae lacinia. Proin blandit turpis ac risus suscipit, at auctor orci rhoncus. Duis non purus nulla. Proin semper, nunc ut dictum finibus, turpis augue finibus nibh, sed aliquam sapien felis sed tortor. Fusce sapien arcu, aliquam non blandit eu, posuere sed neque. Nulla elementum blandit erat vitae dapibus. Nunc lacinia risus purus, a ultrices nisi sollicitudin at. Sed eu dictum tortor.</p>
+                <p>Donec eget molestie massa. Praesent dignissim dictum neque sit amet consectetur. Suspendisse potenti. Fusce ac lacinia augue, consectetur cursus elit. Quisque gravida egestas mattis. Duis in nulla sagittis, rhoncus est at, consectetur mi. Aenean non nulla eget urna placerat feugiat in in purus. Integer aliquam tortor non augue dignissim dignissim. Morbi sed sapien et eros interdum dignissim. Aliquam pharetra semper mi nec viverra.</p>
+                <p>Sed eu accumsan ante. Donec tincidunt arcu et lacus dictum tempor. Duis ac sapien ullamcorper, blandit urna a, suscipit mi. Phasellus porta lacinia ligula, id maximus justo placerat accumsan. Quisque fermentum tempus ligula, quis maximus nisi molestie ac. Aliquam condimentum vehicula venenatis. Proin at posuere arcu, id varius mauris. Sed lacus justo, scelerisque id purus sit amet, fermentum ultricies urna. Sed rutrum euismod molestie. Fusce tellus ante, consequat non est in, accumsan imperdiet mi. Vivamus ut arcu pulvinar, pellentesque dui vitae, venenatis felis. Aenean ac neque non orci eleifend consequat. Etiam quis odio leo. Duis quis sodales leo. Morbi mauris elit, dictum vitae lorem eu, facilisis gravida enim. Cras non tristique nulla.</p>
+                <p>Suspendisse ornare arcu ut tellus placerat, sit amet facilisis orci cursus. Curabitur dictum tristique efficitur. Integer vehicula dictum facilisis. Aliquam in tellus sollicitudin, laoreet quam vel, maximus lacus. Pellentesque scelerisque ultrices tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas orci massa, sollicitudin non eros sit amet, consectetur sollicitudin libero. Nullam pretium efficitur quam, quis efficitur sem vehicula et. Ut mollis lorem sed molestie fringilla. Nullam nulla tellus, tincidunt quis nulla a, semper tempor lacus. Curabitur quis varius nibh, fringilla auctor ante. Donec enim magna, laoreet sed tempus in, tincidunt sit amet sem. Proin vitae dui eu diam ultricies viverra. Aenean condimentum tempor auctor.</p>
+                <p>Integer blandit, ante ut finibus luctus, ligula erat accumsan odio, quis finibus dolor nulla ac mi. Praesent in massa nec lacus condimentum ultrices. Phasellus tincidunt turpis nec nisl convallis luctus. Donec ultrices sapien odio, eget euismod lacus placerat eget. Morbi mattis pellentesque justo at blandit. Praesent hendrerit eleifend mauris nec gravida. In mollis quis sapien nec pretium. Fusce elementum, massa a viverra facilisis, diam diam lobortis diam, non hendrerit massa dui non massa. Donec pellentesque dapibus vehicula. Etiam vulputate purus a augue semper, ac faucibus lorem condimentum. Maecenas eget tempor enim, vitae condimentum libero. Praesent eleifend pretium magna, sit amet hendrerit urna facilisis sit amet. Nulla porttitor porttitor accumsan. Vestibulum sed aliquam nisi.</p>
+            </div>
+            <h1>Demo - X / Y</h1>
+            <div class="ofx">
+                <div class="ofx-inner">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id massa aliquam, rhoncus orci ac, pretium nisl. Etiam sagittis facilisis sem vitae lacinia. Proin blandit turpis ac risus suscipit, at auctor orci rhoncus. Duis non purus nulla. Proin semper, nunc ut dictum finibus, turpis augue finibus nibh, sed aliquam sapien felis sed tortor. Fusce sapien arcu, aliquam non blandit eu, posuere sed neque. Nulla elementum blandit erat vitae dapibus. Nunc lacinia risus purus, a ultrices nisi sollicitudin at. Sed eu dictum tortor.</p>
+                    <p>Donec eget molestie massa. Praesent dignissim dictum neque sit amet consectetur. Suspendisse potenti. Fusce ac lacinia augue, consectetur cursus elit. Quisque gravida egestas mattis. Duis in nulla sagittis, rhoncus est at, consectetur mi. Aenean non nulla eget urna placerat feugiat in in purus. Integer aliquam tortor non augue dignissim dignissim. Morbi sed sapien et eros interdum dignissim. Aliquam pharetra semper mi nec viverra.</p>
+                    <p>Sed eu accumsan ante. Donec tincidunt arcu et lacus dictum tempor. Duis ac sapien ullamcorper, blandit urna a, suscipit mi. Phasellus porta lacinia ligula, id maximus justo placerat accumsan. Quisque fermentum tempus ligula, quis maximus nisi molestie ac. Aliquam condimentum vehicula venenatis. Proin at posuere arcu, id varius mauris. Sed lacus justo, scelerisque id purus sit amet, fermentum ultricies urna. Sed rutrum euismod molestie. Fusce tellus ante, consequat non est in, accumsan imperdiet mi. Vivamus ut arcu pulvinar, pellentesque dui vitae, venenatis felis. Aenean ac neque non orci eleifend consequat. Etiam quis odio leo. Duis quis sodales leo. Morbi mauris elit, dictum vitae lorem eu, facilisis gravida enim. Cras non tristique nulla.</p>
+                    <p>Suspendisse ornare arcu ut tellus placerat, sit amet facilisis orci cursus. Curabitur dictum tristique efficitur. Integer vehicula dictum facilisis. Aliquam in tellus sollicitudin, laoreet quam vel, maximus lacus. Pellentesque scelerisque ultrices tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas orci massa, sollicitudin non eros sit amet, consectetur sollicitudin libero. Nullam pretium efficitur quam, quis efficitur sem vehicula et. Ut mollis lorem sed molestie fringilla. Nullam nulla tellus, tincidunt quis nulla a, semper tempor lacus. Curabitur quis varius nibh, fringilla auctor ante. Donec enim magna, laoreet sed tempus in, tincidunt sit amet sem. Proin vitae dui eu diam ultricies viverra. Aenean condimentum tempor auctor.</p>
+                    <p>Integer blandit, ante ut finibus luctus, ligula erat accumsan odio, quis finibus dolor nulla ac mi. Praesent in massa nec lacus condimentum ultrices. Phasellus tincidunt turpis nec nisl convallis luctus. Donec ultrices sapien odio, eget euismod lacus placerat eget. Morbi mattis pellentesque justo at blandit. Praesent hendrerit eleifend mauris nec gravida. In mollis quis sapien nec pretium. Fusce elementum, massa a viverra facilisis, diam diam lobortis diam, non hendrerit massa dui non massa. Donec pellentesque dapibus vehicula. Etiam vulputate purus a augue semper, ac faucibus lorem condimentum. Maecenas eget tempor enim, vitae condimentum libero. Praesent eleifend pretium magna, sit amet hendrerit urna facilisis sit amet. Nulla porttitor porttitor accumsan. Vestibulum sed aliquam nisi.</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

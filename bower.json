@@ -1,0 +1,22 @@
+{
+  "name": "gush",
+  "version": "0.1.0",
+  "repo": "azt3k/gush",
+  "homepage": "https://github.com/azt3k/gush",
+  "description": "provides touch scroll support for android < 3 devices as a work around for lack of overflow support",
+  "keywords": [
+    "height",
+    "width",
+    "gush",
+    "jquery",
+    "overflow",
+    "polyfill"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~1.11.1"
+  },
+  "main": "gush.js",
+  "development": {},
+  "ignore": []
+}

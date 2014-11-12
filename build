@@ -1,0 +1,4 @@
+#!/bin/bash
+
+OUTPUT=$(uglifyjs gush.js -m -r '$,require,exports')
+echo ";$OUTPUT" > gush.min.js
