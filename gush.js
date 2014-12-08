@@ -7,10 +7,18 @@
     "use strict"
 
     var pluginName = "gush",
-        pluginVersion = "0.1.0",
+        pluginVersion = "0.1.1",
         defaults = {
             x: true,
             y: true,
+            start: {
+                stopPropagation: false,
+                preventDefault: false,
+            },
+            move: {
+                stopPropagation: false,
+                preventDefault: true
+            }
         };
 
     function Plugin(element, options) {
@@ -71,12 +79,14 @@
                     start = function(event) {
                         if (conf.x) scrollStartLeft = this.scrollLeft + event.touches[0].pageX;
                         if (conf.y) scrollStartTop = this.scrollTop + event.touches[0].pageY;
-                        event.preventDefault();
+                        if (conf.start.preventDefault) event.preventDefault();
+                        if (conf.start.stopPropagation) event.stopPropagation();
                     },
                     move = function(event) {
                         if (conf.x) this.scrollLeft = scrollStartLeft - event.touches[0].pageX;
                         if (conf.y) this.scrollTop = scrollStartTop - event.touches[0].pageY;
-                        event.preventDefault();
+                        if (conf.move.preventDefault) event.preventDefault();
+                        if (conf.move.stopPropagation) event.stopPropagation();
                     };
 
                 this.handler.unbind(el, "touchstart", start);
@@ -125,4 +135,3 @@
     };
 
 })(jQuery, window, document);
-

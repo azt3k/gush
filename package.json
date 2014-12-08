@@ -1,6 +1,6 @@
 {
   "name": "gush",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "provides touch scroll support for android < 3 devices as a work around for lack of overflow support",
   "main": "gush.js",
   "scripts": {
