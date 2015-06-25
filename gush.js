@@ -51,14 +51,16 @@
 
             // Android
             if (is_android && !is_chrome) {
-                var res = ua.match(/Android ([^;]+)/),
+                var res = ua.match(/Android ([^;]+)/);
+                if(res != null){
                     v = parseFloat(res[1].split(' ').join('-'));
 
-                if (res.length && v < 3)
-                    $('html')
-                        .addClass('in-need-of-gush')
-                        .addClass('native-android')
-                        .addClass('native-android-' + v);
+                    if (res.length && v < 3)
+                        $('html')
+                            .addClass('in-need-of-gush')
+                            .addClass('native-android')
+                            .addClass('native-android-' + v);
+                }
             }
         },
 
