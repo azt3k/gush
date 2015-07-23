@@ -7,7 +7,7 @@
     "use strict"
 
     var pluginName = "gush",
-        pluginVersion = "0.1.1",
+        pluginVersion = "0.1.2",
         defaults = {
             x: true,
             y: true,
@@ -53,7 +53,7 @@
             if (is_android && !is_chrome) {
                 var res = ua.match(/Android ([^;]+)/);
                 if(res != null){
-                    v = parseFloat(res[1].split(' ').join('-'));
+                    var v = parseFloat(res[1].split(' ').join('-'));
 
                     if (res.length && v < 3)
                         $('html')
