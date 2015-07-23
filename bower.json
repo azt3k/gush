@@ -1,6 +1,6 @@
 {
   "name": "gush",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repo": "azt3k/gush",
   "homepage": "https://github.com/azt3k/gush",
   "description": "provides touch scroll support for android < 3 devices as a work around for lack of overflow support",
